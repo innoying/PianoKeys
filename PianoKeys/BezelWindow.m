@@ -33,7 +33,7 @@ static BezelWindow *sCurrentWindow = nil;
 
 
 - (id)init {
-    NSRect frame = NSMakeRect(0, 0, 200, 200);
+    NSRect frame = NSMakeRect(0, 0, 210, 210);
     
     self = [super initWithContentRect:frame
                             styleMask:NSBorderlessWindowMask 
@@ -47,7 +47,7 @@ static BezelWindow *sCurrentWindow = nil;
         self.hasShadow = NO;
         self.ignoresMouseEvents = YES;
         
-        [self center];
+        [self position];
         
         roundedView_ = [[BezelView alloc] initWithFrame:frame];
         [self setContentView:roundedView_];
@@ -65,15 +65,15 @@ static BezelWindow *sCurrentWindow = nil;
 }
 
 
-- (void)center {
+- (void)position {
     NSRect frame = [self frame];
     NSRect screenFrame = [self.screen frame];
     
     CGFloat xPos = NSWidth(screenFrame)/2 - NSWidth(frame)/2;
-    CGFloat yPos = NSHeight(screenFrame)/2 - NSHeight(frame)/2;
+    CGFloat yPos = 140;
     
-    NSRect centerFrame = NSMakeRect(xPos, yPos, NSWidth(frame), NSHeight(frame));
-    [self setFrame:centerFrame display:YES];
+    NSRect positionedFrame = NSMakeRect(xPos, yPos, NSWidth(frame), NSHeight(frame));
+    [self setFrame:positionedFrame display:YES];
 }
 
 - (BOOL)canBeVisibleOnAllSpaces {
