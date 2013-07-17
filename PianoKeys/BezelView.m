@@ -48,12 +48,13 @@
     
     NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
     [attributes setObject:[NSFont systemFontOfSize:125.0f] forKey:NSFontAttributeName];
+    [attributes setObject:[NSColor whiteColor] forKey:NSForegroundColorAttributeName];
     
     if (text_) {
         NSSize textSize = [text_ sizeWithAttributes:attributes];
         NSPoint textCenter = NSMakePoint((maxX / 2) - (textSize.width / 2), (maxY / 2) - (textSize.height / 2));
         
-        [text_ drawAtPoint:textCenter withAttributes:attributes];    
+        [text_ drawAtPoint:textCenter withAttributes:attributes];
     }
 }
 
