@@ -104,7 +104,7 @@
     if ([command isEqualToString:COMMAND_PLAY]) {
         flashText = @"▶";
     } else if ([command isEqualToString:COMMAND_FAST]) {
-        flashText = @"⏩";
+        flashText = @"»";
     } else if ([command isEqualToString:COMMAND_LOVE]) {
         flashText = @"❤";
     } else if ([command isEqualToString:COMMAND_BAN]) {
