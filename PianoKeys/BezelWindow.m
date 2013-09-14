@@ -33,7 +33,7 @@ static BezelWindow *sCurrentWindow = nil;
 
 
 - (id)init {
-    NSRect frame = NSMakeRect(0, 0, 210, 210);
+    NSRect frame = NSMakeRect(0, 0, 210, 205);
     
     self = [super initWithContentRect:frame
                             styleMask:NSBorderlessWindowMask 
