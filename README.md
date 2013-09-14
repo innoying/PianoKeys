@@ -43,7 +43,8 @@ up and running, here's what you need to do:
 
 5. Install FontAwesome as a System Font.
 	
-		Download from [here](http://fortawesome.github.io/Font-Awesome/), then open the font/fontawesome-webfont.ttf file and install the font.
+		Download from http://fortawesome.github.io/Font-Awesome/
+		Open the font/fontawesome-webfont.ttf file and install the font.
 
 6. *(Optional)* Create a cool alias to start PianoKeys when you start Pianobar
 
