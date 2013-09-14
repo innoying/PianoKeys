@@ -102,13 +102,13 @@
     NSString *flashText = nil;
     
     if ([command isEqualToString:COMMAND_PLAY]) {
-        flashText = @"▶";
+        flashText = @"\uF04B";
     } else if ([command isEqualToString:COMMAND_FAST]) {
-        flashText = @"»";
+        flashText = @"\uF04E";
     } else if ([command isEqualToString:COMMAND_LOVE]) {
-        flashText = @"❤";
+        flashText = @"\uF087";
     } else if ([command isEqualToString:COMMAND_BAN]) {
-        flashText = @"❌";
+        flashText = @"\uF088";
     }
     
     if (flashText) {
