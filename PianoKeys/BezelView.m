@@ -10,7 +10,7 @@
 
 
 - (void)drawRect:(NSRect)rect {
-    NSColor *bgColor = [NSColor colorWithCalibratedWhite:0.0 alpha:0.2];
+    NSColor *bgColor = [NSColor colorWithCalibratedWhite:0.0 alpha:0.15];
     NSRect bgRect = rect;
     int minX = NSMinX(bgRect);
     int midX = NSMidX(bgRect);
@@ -18,7 +18,7 @@
     int minY = NSMinY(bgRect);
     int midY = NSMidY(bgRect);
     int maxY = NSMaxY(bgRect);
-    float radius = 25.0; // correct value to duplicate Panther's App Switcher
+    float radius = 20.0; // correct value to duplicate Panther's App Switcher
     NSBezierPath *bgPath = [NSBezierPath bezierPath];
     
     // Bottom edge and bottom-right curve
