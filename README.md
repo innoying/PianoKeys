@@ -49,7 +49,7 @@ up and running, here's what you need to do:
 6. *(Optional)* Create a cool alias to start PianoKeys when you start Pianobar
 
         # Add this to your shell's rc file (e.g. ~/.bashrc)
-        alias pianobar='pianokeys && pianobar'
+        alias piano='pianokeys && pianobar'
 
 
 That's it! You should be able to start `pianokeys` and `pianobar` together.
