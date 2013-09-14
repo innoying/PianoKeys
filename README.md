@@ -36,16 +36,16 @@ up and running, here's what you need to do:
         # From the project root directory
         xcodebuild -configuration Release install  # installs into /usr/local/bin
 
-3. **If you downloaded the binary:** Copy the `pianokeys` binary into your $PATH
+5. **If you downloaded the binary:** Copy the `pianokeys` binary into your $PATH
 (e.g. `/usr/local/bin`)
 
         cp ./pianokeys /usr/local/bin
 
-4. Install FontAwesome as a System Font.
+5. Install FontAwesome as a System Font.
 	
-		Download from [here](http://fortawesome.github.io/Font-Awesome/), then open the `font/fontawesome-webfont.ttf` file and install the font.
+		Download from [here](http://fortawesome.github.io/Font-Awesome/), then open the font/fontawesome-webfont.ttf file and install the font.
 
-5. *(Optional)* Create a cool alias to start PianoKeys when you start Pianobar
+6. *(Optional)* Create a cool alias to start PianoKeys when you start Pianobar
 
         # Add this to your shell's rc file (e.g. ~/.bashrc)
         alias pianobar='pianokeys && pianobar'
