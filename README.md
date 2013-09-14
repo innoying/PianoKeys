@@ -41,7 +41,11 @@ up and running, here's what you need to do:
 
         cp ./pianokeys /usr/local/bin
 
-4. *(Optional)* Create a cool alias to start PianoKeys when you start Pianobar
+4. Install FontAwesome as a System Font.
+	
+		Download from [here](http://fortawesome.github.io/Font-Awesome/), then open the `font/fontawesome-webfont.ttf` file and install the font.
+
+5. *(Optional)* Create a cool alias to start PianoKeys when you start Pianobar
 
         # Add this to your shell's rc file (e.g. ~/.bashrc)
         alias pianobar='pianokeys && pianobar'
